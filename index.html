@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website của tôi</title>
+
+    <style>
+        /* Thiết kế giao diện */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fce4ec;
+            color: #333;
+        }
+
+        header {
+            background-color: #e91e63;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #ad1457;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        h2 {
+            color: #e91e63;
+        }
+
+        button {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ad1457;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #e91e63;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Chào mừng đến với website của tôi!</h1>
+        <p>Khám phá những điều thú vị về tôi</p>
+    </header>
+
+    <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#hobby">Sở thích</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Xin chào! Tôi là một học sinh yêu thích công nghệ
+            và khám phá những điều mới mẻ.</p>
+        </section>
+
+        <section id="hobby">
+            <h2>Sở thích</h2>
+            <ul>
+                <li>Học lập trình</li>
+                <li>Nghe nhạc</li>
+                <li>Xem phim</li>
+                <li>Đọc sách</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Liên hệ</h2>
+            <p>Bạn có thể kết nối với tôi qua website này.</p>
+
+            <button onclick="showMessage()">
+                Nhấn vào đây
+            </button>
+
+            <p id="message"></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - Website cá nhân</p>
+    </footer>
+
+    <script>
+        // Chức năng tương tác
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Cảm ơn bạn đã ghé thăm website!";
+        }
+    </script>
+
+</body>
+</html>
